@@ -19,7 +19,8 @@ This data set contains four variables:
 
 ####activity
 - a character variable
-- values include LAYING (n=128304 obs)
+- values include 
+-- LAYING (n=128304 obs)
 				 SITTING (n=117282 obs)
 				 STANDING (n=125796 obs)
 				 WALKING (n=113652 obs)
