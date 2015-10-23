@@ -17,13 +17,13 @@ Additional information on the original dataset is available at http://archive.ic
 This data set contains four variables:
 
 #### subj_id
-- an integer variable
-- values range from 1 to 30
-- a total of 30 subjects were observed in the study
+an integer variable
+values range from 1 to 30
+a total of 30 subjects were observed in the study
 
 ####activity
-- a character variable
-- values include
+a character variable
+values include
 * LAYING
 * SITTING
 * STANDING
