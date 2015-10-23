@@ -131,32 +131,6 @@ write.table(subg, file = "C://Users/Shannon/Documents/DS3/UCI_HAR_summary.txt", 
 ###############################################################################################
 # Information for the Codebook
 
-# File UCI_HAR_long.txt, aka sub
-
-# variable types
-str(sub)
-
-# range of values for subject ID
-quantile(as.numeric(sub$subj_id), probs = c(0, 1))
-
-#number of observations per subject per activity
-ct <- dfdedup %>%
-      group_by(subj_id, act_code) %>%
-      dplyr::summarise("count" = n())
-print(max(ct$count))
-print(min(ct$count))
-
-#values for activity
-tbl <- as.data.frame(table(sub$activity))
-
-#values for features
-tblf <- as.data.frame(table(sub$feature))
-write.table(tblf, file="C://Users/Shannon/tblf.txt")
-
-
-
-# File UCI_HAR_summary.txt, aka subg
-
 # variable types
 str(subg)
 

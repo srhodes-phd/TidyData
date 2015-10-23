@@ -1,6 +1,6 @@
 # TidyData
 ### Codebook for 
-## Getting and Cleaning Data course in Data Science
+## Getting and Cleaning Data course project
   
 Original Data source for this Project is from 
 

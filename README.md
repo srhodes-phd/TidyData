@@ -6,6 +6,8 @@ Data used for this Project is from
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
+The goal of this project was to combine the training and test datasets in to a single tidy dataset and calculate the average for each type of "feature" (see below, for a discussion of the features) by subject and activity.
+
 ####The zipped data file MUST be located in the working directory.
 The R code WILL NOT download the data but will unzip the file if it is found in the working directory.
 The zipped data file is available here:
