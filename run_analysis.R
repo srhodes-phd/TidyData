@@ -114,7 +114,7 @@ sub <- subdf %>%
       gather(feature, value, -c(subj_id, activity))
 
 #Create the output data set
-write.table(sub, file = "C://Users/Shannon/Documents/TidyData/UCI_HAR_long.txt", row.names = FALSE)
+write.table(sub, file = "C://Users/Shannon/Documents/DS3/UCI_HAR_long.txt", row.names = FALSE)
 
 
 ###############################################################################################
@@ -125,7 +125,7 @@ subg <- sub %>%
       group_by(activity, subj_id, feature) %>%
       dplyr::summarise("average" = mean(value))
 
-write.table(subg, file = "C://Users/Shannon/Documents/TidyData/UCI_HAR_summary.txt", row.names = FALSE, sep=",")
+write.table(subg, file = "C://Users/Shannon/Documents/DS3/UCI_HAR_summary.txt", row.names = FALSE, sep=",")
 
 
 ###############################################################################################
