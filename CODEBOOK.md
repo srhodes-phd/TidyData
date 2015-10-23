@@ -17,13 +17,10 @@ Additional information on the original dataset is available at http://archive.ic
 This data set contains four variables:
 
 #### subj_id
-an integer variable
-values range from 1 to 30
-a total of 30 subjects were observed in the study
+An integer variable. Values range from 1 to 30. A total of 30 subjects were observed in the study
 
 ####activity
-a character variable
-values include
+A character variable. The 6 unique values include:
 * LAYING
 * SITTING
 * STANDING
@@ -32,76 +29,76 @@ values include
 * WALKING_UPSTAIRS
 
 ####feature
-- a factor (categorical character) variable
-- values include (n=180 for each value)
-				tBodyAcc-mean()-X
-				tBodyAcc-mean()-Y
-				tBodyAcc-mean()-Z
-				tGravityAcc-mean()-X
-				tGravityAcc-mean()-Y
-				tGravityAcc-mean()-Z
-				tBodyAccJerk-mean()-X
-				tBodyAccJerk-mean()-Y
-				tBodyAccJerk-mean()-Z
-				tBodyGyro-mean()-X
-				tBodyGyro-mean()-Y
-				tBodyGyro-mean()-Z
-				tBodyGyroJerk-mean()-X
-				tBodyGyroJerk-mean()-Y
-				tBodyGyroJerk-mean()-Z
-				tBodyAccMag-mean()
-				tGravityAccMag-mean()
-				tBodyAccJerkMag-mean()
-				tBodyGyroMag-mean()
-				tBodyGyroJerkMag-mean()
-				fBodyAcc-mean()-X
-				fBodyAcc-mean()-Y
-				fBodyAcc-mean()-Z
-				fBodyAccJerk-mean()-X
-				fBodyAccJerk-mean()-Y
-				fBodyAccJerk-mean()-Z
-				fBodyGyro-mean()-X
-				fBodyGyro-mean()-Y
-				fBodyGyro-mean()-Z
-				fBodyAccMag-mean()
-				fBodyBodyAccJerkMag-mean()
-				fBodyBodyGyroMag-mean()
-				fBodyBodyGyroJerkMag-mean()
-				tBodyAcc-std()-X
-				tBodyAcc-std()-Y
-				tBodyAcc-std()-Z
-				tGravityAcc-std()-X
-				tGravityAcc-std()-Y
-				tGravityAcc-std()-Z
-				tBodyAccJerk-std()-X
-				tBodyAccJerk-std()-Y
-				tBodyAccJerk-std()-Z
-				tBodyGyro-std()-X
-				tBodyGyro-std()-Y
-				tBodyGyro-std()-Z
-				tBodyGyroJerk-std()-X
-				tBodyGyroJerk-std()-Y
-				tBodyGyroJerk-std()-Z
-				tBodyAccMag-std()
-				tGravityAccMag-std()
-				tBodyAccJerkMag-std()
-				tBodyGyroMag-std()
-				tBodyGyroJerkMag-std()
-				fBodyAcc-std()-X
-				fBodyAcc-std()-Y
-				fBodyAcc-std()-Z
-				fBodyAccJerk-std()-X
-				fBodyAccJerk-std()-Y
-				fBodyAccJerk-std()-Z
-				fBodyGyro-std()-X
-				fBodyGyro-std()-Y
-				fBodyGyro-std()-Z
-				fBodyAccMag-std()
-				fBodyBodyAccJerkMag-std()
-				fBodyBodyGyroMag-std()
-				fBodyBodyGyroJerkMag-std()
-- for a discussion of these factors, see the README file.
+A factor (categorical character) variable. The 66 unique values include:
+*	tBodyAcc-mean()-X
+*	tBodyAcc-mean()-Y
+*	tBodyAcc-mean()-Z
+*	tGravityAcc-mean()-X
+*	tGravityAcc-mean()-Y
+*	tGravityAcc-mean()-Z
+*	tBodyAccJerk-mean()-X
+*	tBodyAccJerk-mean()-Y
+*	tBodyAccJerk-mean()-Z
+*	tBodyGyro-mean()-X
+*	tBodyGyro-mean()-Y
+*	tBodyGyro-mean()-Z
+*	tBodyGyroJerk-mean()-X
+*	tBodyGyroJerk-mean()-Y
+*	tBodyGyroJerk-mean()-Z
+*	tBodyAccMag-mean()
+*	tGravityAccMag-mean()
+*	tBodyAccJerkMag-mean()
+*	tBodyGyroMag-mean()
+*	tBodyGyroJerkMag-mean()
+*	fBodyAcc-mean()-X
+*	fBodyAcc-mean()-Y
+*	fBodyAcc-mean()-Z
+*	fBodyAccJerk-mean()-X
+*	fBodyAccJerk-mean()-Y
+*	fBodyAccJerk-mean()-Z
+*	fBodyGyro-mean()-X
+*	fBodyGyro-mean()-Y
+*	fBodyGyro-mean()-Z
+*	fBodyAccMag-mean()
+*	fBodyBodyAccJerkMag-mean()
+*	fBodyBodyGyroMag-mean()
+*	fBodyBodyGyroJerkMag-mean()
+*	tBodyAcc-std()-X
+*	tBodyAcc-std()-Y
+*	tBodyAcc-std()-Z
+*	tGravityAcc-std()-X
+*	tGravityAcc-std()-Y
+*	tGravityAcc-std()-Z
+*	tBodyAccJerk-std()-X
+*	tBodyAccJerk-std()-Y
+*	tBodyAccJerk-std()-Z
+*	tBodyGyro-std()-X
+*	tBodyGyro-std()-Y
+*	tBodyGyro-std()-Z
+*	tBodyGyroJerk-std()-X
+*	tBodyGyroJerk-std()-Y
+*	tBodyGyroJerk-std()-Z
+*	tBodyAccMag-std()
+*	tGravityAccMag-std()
+*	tBodyAccJerkMag-std()
+*	tBodyGyroMag-std()
+*	tBodyGyroJerkMag-std()
+*	fBodyAcc-std()-X
+*	fBodyAcc-std()-Y
+*	fBodyAcc-std()-Z
+*	fBodyAccJerk-std()-X
+*	fBodyAccJerk-std()-Y
+*	fBodyAccJerk-std()-Z
+*	fBodyGyro-std()-X
+*	fBodyGyro-std()-Y
+*	fBodyGyro-std()-Z
+*	fBodyAccMag-std()
+*	fBodyBodyAccJerkMag-std()
+*	fBodyBodyGyroMag-std()
+*	fBodyBodyGyroJerkMag-std()
+
+				
+Each feature is observed 180 times (30 subjects*6 activities)in the dataset. For more discussion of these factors, see the README file.
 
 ####average
-- a numeric variable
-- values are the average normalized value for each subject-activity-feature combination.
+A numeric variable. Values are the average normalized value bound between [-1, 1] for each subject-activity-feature combination.
